@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+}
+
+#mainNavBar{
+    min-height: 10vh;
+    min-width: 100%;
+    background: red;
+}
+
+#mainBody{
+    min-height: 90vh;
+    min-width: 100%;
+    background: blue;
+}
