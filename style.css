@@ -5,11 +5,19 @@ body{
 #mainNavBar{
     min-height: 10vh;
     min-width: 100%;
-    background: red;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.DynamicUtlIcon{
+    font-size: 65px;
+    padding: 0px 15px;
 }
 
 #mainBody{
     min-height: 90vh;
     min-width: 100%;
-    background: blue;
+    background: white;
 }
