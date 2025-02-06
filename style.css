@@ -1,15 +1,60 @@
 body{
     margin: 0px;
+    background-color: #fdf1f0;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 #mainNavBar{
     min-height: 10vh;
     min-width: 100%;
-    background: black;
-    color: white;
+    background: transparent;
+    color: #262626;
     display: flex;
     align-items: center;
 }
+
+#mainNavBar img{
+    width: 150px;
+    cursor: pointer;
+}
+
+#mainNavBar #Navigator{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 100px;
+    padding: 20px;
+}
+
+#mainNavBar .TabsContainer{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 700;
+    position: relative;
+}
+
+#mainNavBar .navtab{
+    padding: 6px 8px;
+    transition: all 0.3s linear; 
+    cursor: pointer;
+}
+#mainNavBar .navtab.hoveringover:hover{
+    background-color: rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+}
+
+#mainNavBar .navtabSelector{
+    position:absolute;
+    transition:all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+
 
 .DynamicUtlIcon{
     font-size: 65px;
@@ -19,5 +64,4 @@ body{
 #mainBody{
     min-height: 90vh;
     min-width: 100%;
-    background: white;
 }

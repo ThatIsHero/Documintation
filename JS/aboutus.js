@@ -21,8 +21,17 @@ var aboutUs = (function(){
     };
 
     function body(){
-        $('<div class="visionContainer"></div><div class="missionContainer"></div>').appendTo(mainContainer.find('#MissionAndVisionContainer'));
-        
+        var missionContainer = $('<div class="missionContainer"></div>').appendTo(mainContainer.find('#MissionAndVisionContainer'));
+        $('<i class="icon-Mission"></i>'+
+           '<span>Mission</span>'+
+           '<span>To innovate and produce durable, sustainable, and eco-conscious building bricks that address global plastic pollution while contributing to a greener construction industry.</span>'
+        ).appendTo(missionContainer);
+
+        var visionContainer = $('<div class="visionContainer"></div>').appendTo(mainContainer.find('#MissionAndVisionContainer'));
+        $('<i class="icon-Vision"></i>'+
+           '<span>Vision</span>'+
+           '<span>To become a global leader in sustainable construction materials by driving the adoption of eco-friendly solutions and inspiring a circular economy in the built environment.</span>'
+        ).appendTo(visionContainer);
 
     };
 

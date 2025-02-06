@@ -1,4 +1,6 @@
 $(document).ready(function(){
-        
-    aboutUs.control();
+    
+    //Navbar
+    navbar.control();
+
 })
