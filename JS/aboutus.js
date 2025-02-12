@@ -1730,7 +1730,7 @@ var aboutUs = (function(){
 
 
                 $(`
-                    <span class='Title'>Meet The Team</span>
+                    <span class='Title'>Meet The <span style="color:#990011 ">Team</span></span>
                     <div class='ManagementSection'></div>
                     <div class='DepartmentsSection'></div>
                     `).appendTo(mainContainer.find('#MeetTheTeamContainer'))
