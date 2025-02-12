@@ -5,7 +5,7 @@ var Dashboard = (function(){
     //#endregion
 
     function control () {
-        
+        console.log('hello')
     };    
 
     function definition(){

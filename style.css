@@ -8,6 +8,7 @@ body{
 
 #mainNavBar{
     min-height: 10vh;
+    max-height: 10vh;
     min-width: 100%;
     background: transparent;
     color: #262626;
@@ -63,5 +64,115 @@ body{
 
 #mainBody{
     min-height: 90vh;
+    max-height: 90vh;
     min-width: 100%;
+    display: flex;
+}
+
+#mainBody > *:first-child{
+    min-height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#MissionAndVisionContainer .MissionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+}
+
+
+#MissionAndVisionContainer .MissionContainer .Title{
+    font-size: 42px;
+    font-weight: 700;
+}
+
+#MissionAndVisionContainer .VisionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+
+#MissionAndVisionContainer .VisionContainer .Title{
+    font-size: 42px;
+    font-weight: 700;
+}
+
+#MissionAndVisionContainer .MissionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+#MeetTheTeamContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInUp 1.2s forwards;
+    animation-delay: 1s;
+    gap: 20px;
+}
+
+#MeetTheTeamContainer{
+    font-size: 42px;
+    font-weight: 700;
+}
+.ManagementSection{
+    display: flex;
+    gap:80px;
+}
+
+.DepartmentsSection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.ManagementCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teamMemberImages{
+    width: 200px;
+    border-radius: 12px;
+}
+
+.teamMemberName{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.teamMemberPosition{
+    
+    font-size: 24px;
+    font-weight: 300;
+
 }

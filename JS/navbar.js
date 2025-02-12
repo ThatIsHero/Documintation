@@ -26,18 +26,28 @@ var navbar = (function(){
 
         var Tabs = $('<div class="TabsContainer"></div>').appendTo(mainContainer.find('#Tabs'));
         $(`
-            <div class='navtab hoveringover' title:"Our Products"><div style='padding:6px 8px;'>Our Products</div></div>
-            <div class='navtab hoveringover' title:"About Us"><div style='padding:6px 8px;'>About Us</div></div>
-            <div class='navtab hoveringover' title:"Our Journey"><div style='padding:6px 8px;'>Our Journey</div></div>
+            <div class='navtab hoveringover' title="Our Products" data-item="OurProducts"><div style='padding:6px 8px;'>Our Products</div></div>
+            <div class='navtab hoveringover' title="About Us" data-item="Aboutus"><div style='padding:6px 8px;'>About Us</div></div>
+            <div class='navtab hoveringover' title="Our Journey" data-item="OurJourney"><div style='padding:6px 8px;'>Our Journey</div></div>
             <div class='navtabSelector'></div>
             `).appendTo(Tabs);
 
             Tabs.find('.navtab').on('click', function() {
                 let $this = $(this); 
-                
+                $('#mainBody').empty();
                 Tabs.find('.navtab').addClass('hoveringover'); 
                 $this.removeClass('hoveringover'); 
-            
+                
+                if ($(this).data("item") === "Aboutus") {
+                    aboutUs.control();
+                }
+                else if ($(this).data("item") === "OurJourney") {
+                    aboutUs.control();
+                }
+                else if ($(this).data("item") === "Aboutus") {
+                    aboutUs.control();
+                }
+
                 setTimeout(function() {
                     Tabs.find('.navtabSelector').css({
                         'left': $this.position().left,
@@ -46,6 +56,11 @@ var navbar = (function(){
                     });
                 }, 200);
             });
+
+            Logo.off('click').on('click',function(){
+                $('#mainBody').empty();
+                Dashboard.control();
+            })
             
         Logo.on('click', function(){
             Tabs.find('.navtabSelector').attr('style', '');    
