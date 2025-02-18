@@ -57,6 +57,8 @@ body{
 
 
 
+
+
 .DynamicUtlIcon{
     font-size: 65px;
     padding: 0px 15px;
@@ -90,6 +92,7 @@ body{
 #MissionAndVisionContainer .MissionContainer .Title{
     font-size: 42px;
     font-weight: 700;
+    text-align: center;
 }
 
 #MissionAndVisionContainer .VisionContainer{
@@ -105,6 +108,7 @@ body{
 #MissionAndVisionContainer .VisionContainer .Title{
     font-size: 42px;
     font-weight: 700;
+    text-align: center;
 }
 
 #MissionAndVisionContainer .MissionContainer{
@@ -144,7 +148,9 @@ body{
 }
 .ManagementSection{
     display: flex;
-    gap:80px;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .DepartmentsSection{
@@ -175,4 +181,47 @@ body{
     font-size: 24px;
     font-weight: 300;
 
+}
+
+#OurJourneyContainer{
+    justify-content: center;
+    overflow: hidden;
+}
+#OurJourneyContainer .swiper-slide{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;      
+}
+
+#OurJourneyContainer .swiper-slide .swiperinformation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    
+}
+
+#OurJourneyContainer .journeyTitle{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#OurJourneyContainer .journeyDate{
+    text-align: center;
+}
+
+@media (max-width: 430px) {
+    #MissionAndVisionContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #MissionAndVisionContainer .MissionContainer{
+        width: 80%;
+    }
+    #MissionAndVisionContainer .VisionContainer{
+        width: 80%;
+    }
 }

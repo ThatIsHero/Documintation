@@ -38,11 +38,11 @@ var navbar = (function(){
                 Tabs.find('.navtab').addClass('hoveringover'); 
                 $this.removeClass('hoveringover'); 
                 
-                if ($(this).data("item") === "Aboutus") {
+                if ($(this).data("item") === "OurProducts") {
                     aboutUs.control();
                 }
                 else if ($(this).data("item") === "OurJourney") {
-                    aboutUs.control();
+                    OurJourney.control();
                 }
                 else if ($(this).data("item") === "Aboutus") {
                     aboutUs.control();

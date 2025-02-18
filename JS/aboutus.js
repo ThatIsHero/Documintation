@@ -14,7 +14,7 @@ var aboutUs = (function(){
     function definition(){
 
         mainContainer = $('<div id="aboutUsContainer">' +
-                    '<div id="MissionAndVisionContainer" style="padding-top:120px;display:flex;gap:150px;min-height:268.67px"></div>' +
+                    '<div id="MissionAndVisionContainer" style="padding-top:120px;display:flex;gap:150px;"></div>' +
                     '<div id="MeetTheTeamContainer"></div>' +
                     '</div>').appendTo('#mainBody');   
 
