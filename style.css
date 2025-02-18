@@ -183,15 +183,65 @@ body{
 
 }
 
-#OurJourneyContainer{
-    justify-content: center;
-    overflow: hidden;
+#gifSection{
+    display: flex;
+    justify-content: flex-end;
 }
-#OurJourneyContainer .swiper-slide{
-    width: 500px;
+
+#DashboardHockStatement{
+    height: 450px;
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-around;      
+    font-size: 75px;
+    font-weight: 700;
+}
+
+#gifHock {
+    width: 450px;
+    border-radius: 12px;
+    height: 450px;
+}
+
+#dashboardContainer #Statement{
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+#StatementButton{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+#StatementButton .button{
+    font-size: 24px;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 10px;
+    color: #990011;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#StatementButton .button:hover{
+    background-color: #990011;
+    color: #fdf1f0 ;
+}
+
+#OurJourneyContainer{
+    overflow: hidden;
+    justify-content: center;
+}
+#OurJourneyContainer .swiper-slide{
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+    animation: fadeInUp 0.3s ease-in-out;
+   
 }
 
 #OurJourneyContainer .swiper-slide .swiperinformation{
@@ -199,7 +249,11 @@ body{
     flex-direction: column;
     align-items: center;
     gap:15px;
-    
+    pointer-events: none;
+}
+
+#OurJourneyContainer .swiper-slide .spacerBetween{
+    pointer-events: none;
 }
 
 #OurJourneyContainer .journeyTitle{
@@ -212,7 +266,33 @@ body{
     text-align: center;
 }
 
+.hockwordsJourney{
+    color:#990011;
+}
+
+.swiper-container{
+    padding: 0px 20px;
+}
+
+.ourJourneyImages{
+    height: 250px;
+}
+
+.hockstatementJourney{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    animation: fadeInUp 0.3s ease-in-out;
+
+}
+
 @media (max-width: 430px) {
+    #OurJourneyContainer .swiper-slide{
+        width: 400px;
+    }
     #MissionAndVisionContainer{
         flex-direction: column;
         align-items: center;
@@ -223,5 +303,8 @@ body{
     }
     #MissionAndVisionContainer .VisionContainer{
         width: 80%;
+    }    
+    .hockstatementJourney{
+        flex-direction: column;
     }
 }
