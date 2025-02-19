@@ -27,7 +27,7 @@ var Dashboard = (function(){
 
         mainContainer.find('.button').off('click').on('click',function(){
             $('#mainBody').empty();
-            aboutUs.control();
+            OurProducts.control();
         })
     };
 

@@ -276,6 +276,35 @@ body{
 
 .ourJourneyImages{
     height: 250px;
+    border-radius: 15px;
+}
+
+#Cards{
+    display: flex;
+    justify-content: center;
+}
+
+#HockOurProducts{
+    display: flex
+;
+    font-size: 60px;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Cards .singlecard{
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #ffe8e8;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 24px;
+    border: 1px solid;
+    font-weight: 500;
 }
 
 .hockstatementJourney{

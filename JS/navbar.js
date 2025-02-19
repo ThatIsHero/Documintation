@@ -39,7 +39,7 @@ var navbar = (function(){
                 $this.removeClass('hoveringover'); 
                 
                 if ($(this).data("item") === "OurProducts") {
-                    aboutUs.control();
+                    OurProducts.control();
                 }
                 else if ($(this).data("item") === "OurJourney") {
                     OurJourney.control();

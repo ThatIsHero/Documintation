@@ -33,13 +33,11 @@ var OurJourney = (function(){
                     <span class="journeyTitle">${journey.title}</span>
                     <span class="journeyDate">${journey.date}</span>
                 </div>    
-                <div class="spacerBetween">.............................</div>
                 </div>
                 
                 `).appendTo(swiper.find('.swiper-wrapper'))
 
                 if (Journey.length == index+1){
-                    landmark.find('.spacerBetween').hide();
                     landmark.css('width','fit-content')
                     landmark.css('justify-content','flex-start')
                 }
